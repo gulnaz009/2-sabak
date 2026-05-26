@@ -1,0 +1,92 @@
+/* Бүткүл беттин стили */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Көк-кызгылт фон */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(135deg, #0f3460, #a03c81); /* Көктөн кызгылтка өтүү */
+}
+
+/* Башкы ак карточка (image_1.png сүрөтүндөгү) */
+.profile-card {
+    background-color: white; /* Ак түс */
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px; /* Бурчтарын тегеректөө (башкы сурооңузга жооп) */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Бир аз көлөкө */
+}
+
+/* Сүрөттүн стили */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Сүрөттү тегерек кылат */
+    border: 3px solid #f0f0f0; /* Ак четки рамка */
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Тексттин стилдери */
+.profile-card h1 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    color: #777;
+}
+
+/* Баскычтардын контейнери */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Баскычтар ортосундагы боштук */
+}
+
+/* Жалпы баскычтардын стили (сүрөттөгүдөй) */
+.links-container a {
+    text-decoration: none; /* Асты сызылбасын */
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px; /* Баскычтын бурчтарын ийүү */
+    transition: background-color 0.3s; /* Өзгөргөндө жумшак өтүү */
+}
+
+/* Ар бир баскычтын түсү (сүрөттөгүдөй) */
+.btn-whatsapp {
+    background-color: #f7a9ca; /* Ачык кызгылт */
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #f58eb8; /* Чычкан баргандагы кочкул кызгылт */
+}
+
+.btn-instagram {
+    background-color: #1c272b; /* Ачык көк */
+    color: white;
+}
+
+.btn-instagram:hover {
+    background-color: #6ed0ef; /* Кочкул көк */
+}
+
+.btn-telegram {
+    background-color: #a7f7d1; /* Ачык жашыл */
+    color: white;
+}
+
+.btn-telegram:hover {
+    background-color: #87e9b1; /* Кочкул жашыл */
+}
